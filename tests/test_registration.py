@@ -8,11 +8,11 @@ class TestRegistration:
 
       driver.get('https://stellarburgers.nomoreparties.site/register')
       driver.find_element(*TestLocators.input_name).send_keys("victoria")
-      driver.find_element(*TestLocators.input_email).send_keys("victoria_test119@mail.ru")
+      driver.find_element(*TestLocators.input_email).send_keys("victoria_test121@mail.ru")
       driver.find_element(*TestLocators.input_password).send_keys("123456")
       driver.find_element(*TestLocators.button_registration).click()
       new_url = 'https://stellarburgers.nomoreparties.site/login'
-      assert new_url == 'https://stellarburgers.nomoreparties.site/login'
+      assert 'Регистрация' in driver.find_element(*TestLocators.page_of_enter).text, "После успещной регистрации отображается название Вход"
       driver.quit()
 
 

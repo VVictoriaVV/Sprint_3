@@ -14,9 +14,9 @@ class TestLocators:
     button_exit = By.XPATH,'Account_button__14Yp3 text text_type_main-medium text_color_inactive'
     zagolovok_vhod = By.XPATH,'Auth_login__3hAey'
     button_sb = By.XPATH, ".//div[@class='AppHeader_header__logo__2D0X2']/a"
-    zagolovok_burger = By.XPATH, ".//section[@class='BurgerIngredients_ingredients__1N8v2']/h1"
-    vhod_v_accaunt = By.XPATH, ".//button[contains(text(), 'Войти в аккаунт')]"
-    page_of_enter = By.XPATH, './/h2[text()="Вход"]'
+    zagolovok_burger = By.XPATH, "text text_type_main-large mb-5 mt-10"
+    vhod_v_accaunt = By.XPATH, "button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg"
+    page_of_enter = By.XPATH, ".//div[@class='Auth_login__3hAey']/h2"
     button_input = By.XPATH, './/button[@class="button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa"]'
     button_oformlenie_zakaza = By.XPATH,'button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg'
     button_constructor = By.LINK_TEXT, 'Конструктор'
